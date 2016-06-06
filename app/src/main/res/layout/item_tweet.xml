@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivProfileImg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="user_img"
+        android:background="#b77c7c"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvScreenName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfileImg"
+        android:layout_toEndOf="@+id/ivProfileImg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:textColor="#b65f5f"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvBoby"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_alignBottom="@+id/ivProfileImg"
+        android:layout_alignLeft="@+id/tvScreenName"
+        android:layout_alignStart="@+id/tvScreenName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9m"
+        android:id="@+id/tvRDate"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/tvScreenName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#5fb768"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvName"
+        android:layout_below="@+id/tvRDate"
+        android:layout_alignLeft="@+id/tvScreenName"
+        android:layout_alignStart="@+id/tvScreenName"
+        android:textColor="#ac2b69"/>
+</RelativeLayout>
